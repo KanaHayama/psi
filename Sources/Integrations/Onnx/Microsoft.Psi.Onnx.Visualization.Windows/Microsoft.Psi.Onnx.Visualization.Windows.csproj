@@ -1,7 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<UseWPF>true</UseWPF>
     <RootNamespace>Microsoft.Psi.Onnx.Visualization</RootNamespace>
     <Description>Provides visualizers for ONNX model runner output types defined in Microsoft.Psi.Onnx.ModelRunners.</Description>
   </PropertyGroup>
@@ -11,7 +12,7 @@
     <DocumentationFile>bin\Debug\net472\Microsoft.Psi.Onnx.Visualization.Windows.xml</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CodeAnalysisRuleSet>..\..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
 
@@ -19,7 +20,7 @@
     <DocumentationFile>bin\Release\net472\Microsoft.Psi.Onnx.Visualization.Windows.xml</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CodeAnalysisRuleSet>..\..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
 

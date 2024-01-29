@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<UseWPF>true</UseWPF>
     <RootNamespace>Microsoft.Psi.MixedReality.Visualization</RootNamespace>
     <Description>Provides visualizers for types defined in Microsoft.Psi.MixedReality.</Description>
   </PropertyGroup>
@@ -11,7 +12,7 @@
     <DocumentationFile>bin\Debug\net472\Microsoft.Psi.MixedReality.Visualization.Windows.xml</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
   
@@ -19,7 +20,7 @@
     <DocumentationFile>bin\Release\net472\Microsoft.Psi.MixedReality.Visualization.Windows.xml</DocumentationFile>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
   

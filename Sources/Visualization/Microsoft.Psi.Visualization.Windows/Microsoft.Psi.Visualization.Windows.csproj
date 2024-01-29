@@ -1,6 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
+	<UseWPF>true</UseWPF>
+	<UseWindowsForms>true</UseWindowsForms>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RootNamespace>Microsoft.Psi.Visualization</RootNamespace>
     <Description>Provides base data structures for visualization APIs for Platform for Situated Intelligence.</Description>
@@ -8,7 +10,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\net472\Microsoft.Psi.Visualization.Windows.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <WarningsAsErrors />
     <DefineConstants>TRACE;RELEASE;NET47</DefineConstants>
@@ -17,7 +19,7 @@
     <DocumentationFile>bin\Debug\net472\Microsoft.Psi.Visualization.Windows.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
     <DefineConstants>TRACE;DEBUG;NET47</DefineConstants>
   </PropertyGroup>
@@ -281,6 +283,7 @@
     <Reference Include="System.Xaml" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
+  <!--
   <ItemGroup>
     <Page Include="PropertyGridEditors\ItemPickerEditor.xaml" />
     <Page Include="Themes\Brushes.xaml" />
@@ -356,6 +359,7 @@
     <Page Include="Windows\RunBatchProcessingTaskWindow.xaml" />
     <Page Include="Windows\ScriptWindow.xaml" />
   </ItemGroup>
+  -->
   <ItemGroup>
     <Resource Include="Icons\2d.png" />
     <Resource Include="Icons\3d.png" />

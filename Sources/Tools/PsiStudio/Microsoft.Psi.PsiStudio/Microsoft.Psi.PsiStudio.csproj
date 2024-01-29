@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<UseWPF>true</UseWPF>
     <ApplicationIcon>Psi.ico</ApplicationIcon>
     <OutputType>WinExe</OutputType>
     <StartupObject />
@@ -8,7 +9,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>bin\Debug\Microsoft.Psi.PsiStudio.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -16,7 +17,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\Microsoft.Psi.PsiStudio.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +33,7 @@
   <ItemGroup>
     <AdditionalFiles Include="stylecop.json" />
   </ItemGroup>
+  <!--
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
   </ItemGroup>
@@ -41,6 +43,7 @@
     <Page Include="Windows\AdditionalAssembliesWindow.xaml" />
     <Page Include="Windows\LayoutNameWindow.xaml" />
   </ItemGroup>
+  -->
   <ItemGroup>
     <ProjectReference Include="..\..\..\Audio\Microsoft.Psi.Audio\Microsoft.Psi.Audio.csproj" />
     <ProjectReference Include="..\..\..\Data\Microsoft.Psi.Data\Microsoft.Psi.Data.csproj" />

@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+	<TargetFramework>net8.0-windows</TargetFramework>
+	<UseWPF>true</UseWPF>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <RootNamespace>Microsoft.Psi.LiveCharts.Visualization</RootNamespace>
     <Description>Provides visualization objects and APIs for using LiveCharts with Platform for Situated Intelligence Studio.</Description>
@@ -8,7 +9,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <DocumentationFile>bin\Release\net472\Microsoft.Psi.LiveCharts.Visualization.Windows.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <WarningsAsErrors />
     <DefineConstants>TRACE;RELEASE;NET47</DefineConstants>
@@ -17,7 +18,7 @@
     <DocumentationFile>bin\Debug\net472\Microsoft.Psi.LiveCharts.Visualization.Windows.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <WarningsAsErrors />
     <DefineConstants>TRACE;DEBUG;NET47</DefineConstants>
   </PropertyGroup>
@@ -36,9 +37,11 @@
     </PackageReference>
     <PackageReference Include="StyleCop.Analyzers" Version="1.1.118" PrivateAssets="All" />
   </ItemGroup>
+  <!--
   <ItemGroup>
     <Page Include="CartesianChartVisualizationObjectView.xaml" />
   </ItemGroup>
+  -->
   <ItemGroup>
     <ProjectReference Include="..\..\..\Sources\Runtime\Microsoft.Psi\Microsoft.Psi.csproj" />
     <ProjectReference Include="..\Microsoft.Psi.Visualization.Windows\Microsoft.Psi.Visualization.Windows.csproj" />

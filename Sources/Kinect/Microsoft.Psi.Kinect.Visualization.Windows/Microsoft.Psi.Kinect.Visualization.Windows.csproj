@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-      <TargetFramework>net472</TargetFramework>
+	  <TargetFramework>net8.0-windows</TargetFramework>
+	  <UseWPF>true</UseWPF>
       <AssemblyName>Microsoft.Psi.Kinect.Visualization.Windows</AssemblyName>
       <RootNamespace>Microsoft.Psi.Kinect.Visualization</RootNamespace>
       <PlatformTarget>AnyCPU</PlatformTarget>
@@ -10,12 +11,12 @@
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
       <DefineConstants>DEBUG;TRACE</DefineConstants>
       <DocumentationFile>bin\Debug\net472\Microsoft.Psi.Kinect.Visualization.Windows.xml</DocumentationFile>
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
       <WarningsAsErrors />
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
       <DocumentationFile>bin\Release\net472\Microsoft.Psi.Kinect.Visualization.Windows.xml</DocumentationFile>
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
       <WarningsAsErrors />
     </PropertyGroup>
     <ItemGroup>

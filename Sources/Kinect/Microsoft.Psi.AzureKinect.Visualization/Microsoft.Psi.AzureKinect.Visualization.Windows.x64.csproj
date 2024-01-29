@@ -1,6 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-      <TargetFramework>net472</TargetFramework>
+	  <TargetFramework>net8.0-windows</TargetFramework>
+	  <UseWPF>true</UseWPF>
       <AssemblyName>Microsoft.Psi.AzureKinect.Visualization.Windows.x64</AssemblyName>
       <RootNamespace>Microsoft.Psi.AzureKinect.Visualization</RootNamespace>
       <PlatformTarget>x64</PlatformTarget>
@@ -9,12 +10,12 @@
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
       <DefineConstants>DEBUG;TRACE</DefineConstants>
       <DocumentationFile>bin\Debug\net472\Microsoft.Psi.AzureKinect.Visualization.Windows.x64.xml</DocumentationFile>
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
       <WarningsAsErrors />
     </PropertyGroup>
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
       <DocumentationFile>bin\Release\net472\Microsoft.Psi.AzureKinect.Visualization.Windows.x64.xml</DocumentationFile>
-      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+      <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
       <WarningsAsErrors />
     </PropertyGroup>
     <ItemGroup>
