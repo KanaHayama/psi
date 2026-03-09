@@ -214,7 +214,23 @@ namespace Microsoft.Psi.Visualization.Data
                     // the stream index data structure is being populated, or because the epsilon interval
                     // is set such that no data point is found. In either case, a direct read is
                     // attempted.
-                    streamReader.Seek(dateTime + epsilonTimeInterval, true);
+                    TimeInterval seekInterval;
+                    try
+                    {
+                        seekInterval = dateTime + epsilonTimeInterval;
+                    }
+                    catch (ArgumentOutOfRangeException)
+                    {
+                        // DateTime arithmetic overflow — treat as no data found
+                        foreach (var publisher in this.publishers[epsilonTimeInterval])
+                        {
+                            publisher.PublishValue(false, default, default, default);
+                        }
+
+                        continue;
+                    }
+
+                    streamReader.Seek(seekInterval, true);
                     streamReader.OpenStream(
                         this.StreamName,
                         (data, envelope) =>
