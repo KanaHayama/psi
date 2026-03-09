@@ -226,7 +226,7 @@ namespace Microsoft.Psi.Visualization.VisualizationObjects
         /// <returns>A newly created message using the envelope of the current value.</returns>
         protected Message<T>? SynthesizeMessage<T>(T data)
         {
-            if (!this.CurrentValue.HasValue || this.CurrentValue.Value == null)
+            if (!this.CurrentValue.HasValue)
             {
                 return null;
             }

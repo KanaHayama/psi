@@ -1,18 +1,18 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net472</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>Microsoft.Psi.Speech</RootNamespace>
     <Description>Provides Windows-specific components for speech processing.</Description>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\net472\Microsoft.Psi.Speech.Windows.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\net10.0-windows\Microsoft.Psi.Speech.Windows.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net472\Microsoft.Psi.Speech.Windows.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net10.0-windows\Microsoft.Psi.Speech.Windows.xml</DocumentationFile>
     <CodeAnalysisRuleSet>..\..\..\Build\Microsoft.Psi.ruleset</CodeAnalysisRuleSet>
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
     <WarningsAsErrors />
@@ -37,6 +37,6 @@
     <ProjectReference Include="..\Microsoft.Psi.Speech\Microsoft.Psi.Speech.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="System.Speech" />
+    <PackageReference Include="System.Speech" Version="10.0.0-preview.3.25171.5" />
   </ItemGroup>
 </Project>

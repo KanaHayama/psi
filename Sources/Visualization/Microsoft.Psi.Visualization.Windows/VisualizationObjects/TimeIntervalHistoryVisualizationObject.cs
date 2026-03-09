@@ -177,7 +177,7 @@ namespace Microsoft.Psi.Visualization.VisualizationObjects
             this.DisplayData = new List<TimeIntervalVisualizationObjectData>();
             this.RaisePropertyChanging(nameof(this.TrackCount));
             this.tracks.Clear();
-            if ((message != null) && (message.Data != null))
+            if (message.Data != null)
             {
                 this.tracks.AddRange(message.Data.Keys.OrderBy(s => s));
             }
@@ -185,7 +185,7 @@ namespace Microsoft.Psi.Visualization.VisualizationObjects
             this.GenerateLegendValue();
             this.RaisePropertyChanged(nameof(this.TrackCount));
 
-            if ((message != null) && (message.Data != null))
+            if (message.Data != null)
             {
                 // Flatten the dictionary
                 foreach (KeyValuePair<string, List<(TimeInterval, string, System.Drawing.Color?)>> dictionaryEntry in message.Data)

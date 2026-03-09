@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(xargs grep -l \"Visualization\\\\|Visualizer\")",
+      "Bash(grep -h \"TargetFramework\" /d/Project/Other/psi/Sources/*/Microsoft.Psi*/Microsoft.Psi*.csproj)",
+      "Bash(dotnet --list-sdks)",
+      "Bash(dotnet build Sources/Imaging/Microsoft.Psi.Imaging.Windows/Microsoft.Psi.Imaging.Windows.csproj)",
+      "Bash(dotnet build Sources/Speech/Microsoft.Psi.Speech.Windows/Microsoft.Psi.Speech.Windows.csproj)",
+      "Bash(dotnet build Sources/Visualization/Microsoft.Msagl.WpfGraphControl/Microsoft.Msagl.WpfGraphControl.csproj)",
+      "Bash(dotnet package search Microsoft.Msagl --take 5)",
+      "Bash(dotnet build Sources/Visualization/Microsoft.Psi.Visualization.Windows/Microsoft.Psi.Visualization.Windows.csproj)",
+      "Bash(dotnet package search \"Extended.Wpf.Toolkit\" --take 5)",
+      "Bash(dotnet package search \"HelixToolkit.Wpf\" --take 5)",
+      "Bash(dotnet package search \"CommunityToolkit.Mvvm\" --take 3)",
+      "Bash(dotnet build Sources/Tools/PsiStudio/Microsoft.Psi.PsiStudio/Microsoft.Psi.PsiStudio.csproj)",
+      "Bash(dotnet build Sources/Visualization/Test.Psi.Visualization/Test.Psi.Visualization.csproj)",
+      "Bash(dotnet build Sources/Tools/PsiStudio/Test.Psi.PsiStudio/Test.Psi.PsiStudio.csproj)",
+      "Bash(dotnet test Sources/Visualization/Test.Psi.Visualization/Test.Psi.Visualization.csproj)",
+      "Bash(dotnet test Sources/Tools/PsiStudio/Test.Psi.PsiStudio/Test.Psi.PsiStudio.csproj)",
+      "Bash(dotnet test Sources/Visualization/Test.Psi.Visualization/Test.Psi.Visualization.csproj --no-build)",
+      "Bash(dotnet test Sources/Visualization/Test.Psi.Visualization/Test.Psi.Visualization.csproj --verbosity normal)",
+      "Bash(dotnet test Sources/Visualization/Test.Psi.Visualization/Test.Psi.Visualization.csproj --logger \"console;verbosity=normal\")",
+      "Bash(dotnet test Sources/Visualization/Test.Psi.Visualization/Test.Psi.Visualization.csproj -v n)",
+      "Bash(dotnet --version)",
+      "Bash(dotnet build Psi.sln)"
+    ]
+  }
+}

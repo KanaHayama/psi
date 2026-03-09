@@ -4,7 +4,7 @@
 namespace Microsoft.Psi.Visualization.Extensions
 {
     using System.Windows.Media.Media3D;
-    using euclidean = MathNet.Spatial.Euclidean;
+    using Euclidean = MathNet.Spatial.Euclidean;
 
     /// <summary>
     /// Extension methods for use with MathNet.Spatial.Euclidean objects.
@@ -16,7 +16,7 @@ namespace Microsoft.Psi.Visualization.Extensions
         /// </summary>
         /// <param name="cs">Coordinate system to convert.</param>
         /// <returns>The converted matrix.</returns>
-        public static Matrix3D GetMatrix3D(this euclidean.CoordinateSystem cs)
+        public static Matrix3D GetMatrix3D(this Euclidean.CoordinateSystem cs)
         {
             return new Matrix3D(
                 cs.Values[0],
@@ -42,7 +42,7 @@ namespace Microsoft.Psi.Visualization.Extensions
         /// </summary>
         /// <param name="point">The point to convert.</param>
         /// <returns>The converted point.</returns>
-        public static Point3D ToPoint3D(this euclidean.Point3D point)
+        public static Point3D ToPoint3D(this Euclidean.Point3D point)
         {
             return new Point3D(point.X, point.Y, point.Z);
         }
@@ -52,7 +52,7 @@ namespace Microsoft.Psi.Visualization.Extensions
         /// </summary>
         /// <param name="vector">The vector to convert.</param>
         /// <returns>The converted vector.</returns>
-        public static Vector3D ToVector3D(this euclidean.Vector3D vector)
+        public static Vector3D ToVector3D(this Euclidean.Vector3D vector)
         {
             return new Vector3D(vector.X, vector.Y, vector.Z);
         }

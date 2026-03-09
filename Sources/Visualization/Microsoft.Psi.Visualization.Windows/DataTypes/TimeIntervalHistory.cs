@@ -21,9 +21,11 @@ namespace Microsoft.Psi.Visualization.DataTypes
         /// </remarks>
         /// <param name="serializationInfo">The serialization info.</param>
         /// <param name="streamingContext">The streaming context.</param>
+#pragma warning disable SYSLIB0051 // Formatter-based serialization is obsolete
         protected TimeIntervalHistory(SerializationInfo serializationInfo, StreamingContext streamingContext)
             : base(serializationInfo, streamingContext)
         {
         }
+#pragma warning restore SYSLIB0051
     }
 }
